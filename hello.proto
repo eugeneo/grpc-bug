@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+package Bug;
+
+message HelloResponse
+{
+    string value = 1;
+}
+
+service HelloService
+{
+    rpc HelloStream(google.protobuf.Empty) returns (stream HelloResponse) {}
+}
