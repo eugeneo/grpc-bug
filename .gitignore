@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+build
+gen
+bazel-bin
+bazel-out
+bazel-testlogs
+bazel-use-after-poison-38302
+MODULE.bazel.lock
